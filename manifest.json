@@ -1,0 +1,25 @@
+{
+  "name": "Crunchyroll Skipper",
+  "version": "1.0",
+  "description": "Allows intros and outros to be skipped through a skip button per anime episode on Crunchyroll",
+ "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+   "matches": ["https://static.crunchyroll.com/vilos-v2/web/vilos/player.html*"],
+      "js": ["content_script.js"],
+	  "all_frames": true
+    }
+  ],
+  "permissions": [
+
+  
+  ],
+
+  "manifest_version": 2
+}
